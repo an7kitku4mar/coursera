@@ -1,15 +1,22 @@
-@media (min-width: 1200px)
+@media (min-width: 992px)
             {
                 p.set
                 {
                     width: 100%;
                 }
             }
-            @media (min-width: 952px) and (max-width: 1199px)
+            @media (min-width: 768x) and (max-width: 991px)
             {
                 p.set
                 {
-                    width: 50%;
+                    width: 80%;
+                }
+            }
+            @media (max-width: 767px)
+            {
+                p.set
+                {
+                    width: 60%;
                 }
             }
             
