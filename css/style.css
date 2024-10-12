@@ -1,102 +1,74 @@
-  /* Common styles */
-  body {
-    font-family: Arial, sans-serif;
+/* Global styles */
+html, body {
     margin: 0;
     padding: 0;
-  }
+    font-family: Arial, sans-serif;
+}
 
-  .container {
-    margin: 10px 50px;
-    align-items: center;
-    width: 100%;
-  }
+/* Container for the main content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;   
 
-  /* Desktop styles (992px and above) */
-  @media (min-width: 992px) {
-    .section {
-      display: inline-block;
-      width: 33%;
-      margin-right: 20px;
-      vertical-align: top;
-    }
-  }
+}
 
-  /* Tablet styles (768px to 991px) */
-  @media (min-width: 768px) and (max-width: 991px) {
-    .section {
-      
-      display: inline-block;
-      margin-right: 2%;
-      margin-bottom: 20px;
-      width: 40%;
-    }
+/* Responsive grid system */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-    .section:nth-child(2) {
-      display: inline-block;
-      width: 40%;
-      margin-right: 0;
-      vertical-align: top;
-    }
-    .section:nth-child(3) {
-      display: inline-block;
-      width: 40%;
-      margin-right: 0;
-      vertical-align: top;
-    }
+.col {
+    flex: 1;
+    padding: 10px;
+}
 
-    .section:nth-child(4) {
-      display: block;
-      width: 85%;
-      margin-right: 0;
-      vertical-align: top;
-    }
-  }
-
-  /* Mobile styles (up to 767px) */
-  @media (max-width: 767px) {
-   
-    .section:nth-child(2) {
-      display: inline-block;
-      width: 85%;
-      margin-right: 0;
-      vertical-align: top;
-    }
-    .section:nth-child(3) {
-      display: inline-block;
-      width: 85%;
-      margin-right: 0;
-      vertical-align: top;
-    }
-
-    .section:nth-child(4) {
-      display: block;
-      width: 85%;
-      margin-right: 0;
-      vertical-align: top;
-    }
-  }
-
-  /* Common section styles */
-  .section {
-      width: 25%;
-    background-color: #f0f0f0;
+/* Section styles */
+.section {
     border: 1px solid #ccc;
     padding: 20px;
-    position: relative;
-  }
+}
 
-  .section-title {
-    display: block;
-      position: relative;
-      text-align: right;
-    top: 10px;
-    right: 10px;
-    background-color: #333;
-    color: #fff;
-    padding: 5px 10px;
-    font-size: 125%; /* 25% larger */
-  }
+.section-title {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
 
-  h1 {
-    font-size: 175%; /* 75% larger */
-  }
+/* Media queries for different screen sizes */
+@media (max-width: 768px) {
+    .col {
+        flex: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+    .col {
+        flex: 50%;
+    }
+}
+
+/* Example styles for specific elements */
+h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Additional styles for section titles */
+.section-title-html {
+    background-color: #ffcccc;
+}
+
+.section-title-css {
+    background-color: #ccffcc;
+}
+
+.section-title-js {
+    background-color: #ccccff;
+}
