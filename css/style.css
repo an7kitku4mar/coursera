@@ -59,7 +59,7 @@
         /* Breakpoint for tablet view (between 768px and 991px) */
         @media (min-width: 768px) and (max-width: 991px) {
             .section {
-                width: 45%;
+                width: 40%;
             }
 
             .section:nth-child(3) {
