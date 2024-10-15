@@ -1,35 +1,173 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Responsive Sections</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food LLC</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Delicious Food</h1>
-    <div class="container">
-        <!-- Section 1 -->
-        <div class="section">
-            <div class="section-title">Chicken</div>
-            <p>
-                <br>Chicken is one of the most popular meats in the world. It is a staple in many cultures and is known for its versatility. You can roast, grill, bake, or fry it. Chicken is also used in soups, stews, and salads. It is a great source of protein and can be cooked in a variety of ways to suit any taste or preference. In addition, chicken is often seen as a healthier alternative to red meat. Whether you're making a simple stir-fry or a complex dish, chicken is sure to be a hit.
-            </p>
-        </div>
 
-        <!-- Section 2 -->
-        <div class="section">
-            <div class="section-title">Beef</div>
-            <p>
-                <br>Beef is a rich source of protein and iron and has been a dietary staple in many parts of the world for centuries. From steaks to burgers, beef can be prepared in countless ways. It is also a popular ingredient in traditional dishes such as beef stew, meatloaf, and pot roast. Beef can be grilled, broiled, roasted, or pan-fried, and pairs well with a wide range of seasonings and marinades. While it is a heavier meat, it is often enjoyed in moderation for its rich flavor and ability to satisfy a hearty appetite.
-            </p>
+    <!-- Navbar that appears only in mobile view -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Food, LLC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Nav entries to toggle sections in mobile view -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showSection('chicken')">Chicken</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showSection('beef')">Beef</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showSection('sushi')">Sushi</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
 
-        <!-- Section 3 -->
-        <div class="section">
-            <div class="section-title">Sushi</div>
-            <p>
-                <br>Sushi is a Japanese dish that typically consists of vinegared rice accompanied by raw fish, seafood, or vegetables. It has gained global popularity due to its unique flavors and presentation. Sushi can be prepared in various styles, such as nigiri, sashimi, or maki rolls, offering a wide range of options for different tastes. The freshness of the ingredients is crucial to sushi's quality, making it a delicacy that is both healthy and delicious. Served with soy sauce, wasabi, and pickled ginger, sushi is as much a visual treat as it is a culinary one.
-            </p>
+    <!-- Shaded band with title aligned to the left -->
+    <div class="title-band">
+        <div class="container">
+            <h1>Food, LLC</h1>
         </div>
     </div>
+
+    <!-- Centered "Our Menu" heading below the title band -->
+    <div class="menu-heading">
+        Our Menu
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <!-- Chicken Section -->
+            <div id="chicken-section" class="col-12 col-md-6 col-lg-4 mb-4 section active">
+                <div class="card">
+                    <div class="card-header bg-dark text-white">Chicken</div>
+                    <div class="card-body limited-height">
+                        <p>
+                            A Feathered Feast: The Versatile Chicken
+The chicken, a humble bird with a global reach, has been a staple in human diets for millennia. Its adaptability, nutritional value, and cultural significance have made it one of the most popular poultry choices worldwide.
+
+Nutritional Powerhouse:
+
+Beyond its delicious taste, the chicken offers a wealth of nutritional benefits. It is a lean source of protein, essential for building and repairing tissues. Additionally, chicken is rich in essential vitamins and minerals, including B vitamins, iron, and zinc. These nutrients play crucial roles in various bodily functions, from energy production to immune system health.
+
+Culinary Versatility:
+
+The chicken's versatility in the kitchen is unparalleled. From roasted and grilled to fried and stewed, there are countless ways to prepare this delicious bird. It pairs well with a variety of flavors, making it a favorite in cuisines around the globe. Whether you prefer a classic roasted chicken with herbs and spices or a spicy chicken curry, there's a chicken dish to suit every palate.
+
+Cultural Significance:
+
+The chicken has deep cultural significance in many societies. In some traditions, it is considered a symbol of prosperity and abundance. It often plays a central role in religious ceremonies and festivals. The chicken has also been featured in folklore and mythology, appearing in stories and legends across different cultures.
+
+Health and Sustainability:
+
+In recent years, there has been a growing emphasis on the health and sustainability of food choices. Many consumers are seeking poultry options that are raised ethically and responsibly. Free-range and organic chickens are becoming increasingly popular, as they are often associated with higher quality and better welfare standards.</p>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Beef Section -->
+            <div id="beef-section" class="col-12 col-md-6 col-lg-4 mb-4 section">
+                <div class="card">
+                    <div class="card-header bg-success text-white">Beef</div>
+                    <div class="card-body limited-height">
+                        <p>
+                          A Hearty Meal: The Enduring Appeal of Beef
+Beef, a staple in many cultures worldwide, has long been prized for its rich flavor, hearty texture, and nutritional value. From succulent steaks to savory stews, beef has the power to satisfy even the most discerning appetites.
+
+Nutritional Benefits:
+
+Beef is a rich source of protein, essential for building and repairing tissues. It also contains essential minerals like iron, zinc, and selenium, which play vital roles in various bodily functions. Additionally, beef is a good source of B vitamins, including B12, which is crucial for red blood cell production and nerve function.
+
+Culinary Versatility:
+
+Beef is incredibly versatile in the kitchen, lending itself to a wide range of cooking methods and cuisines. Steaks, roasts, burgers, and ground beef are just a few of the many popular cuts and preparations. Beef can be grilled, roasted, braised, or slow-cooked, resulting in a variety of flavors and textures.
+
+Cultural Significance:
+
+Beef has deep cultural significance in many societies. It is often associated with celebrations, holidays, and special occasions. In some cultures, beef is considered a symbol of wealth and status. The consumption of beef can also be linked to regional and ethnic identities.
+
+Health and Sustainability:
+
+In recent years, there has been a growing awareness of the environmental and health implications of beef consumption. While beef can be a nutritious food, it is important to consume it in moderation and to choose sustainable options. Grass-fed beef is often considered a healthier and more environmentally friendly choice compared to grain-fed beef. </p>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sushi Section -->
+            <div id="sushi-section" class="col-12 col-lg-4 mb-4 section">
+                <div class="card">
+                    <div class="card-header bg-danger text-white">Sushi</div>
+                    <div class="card-body limited-height">
+                        <p>
+                        A Delicate Delight: The Art of Sushi
+Sushi, a culinary masterpiece originating from Japan, has captivated taste buds around the world with its intricate flavors, delicate textures, and artistic presentation. This traditional dish showcases the harmony of fresh seafood, rice, and a variety of accompaniments.
+
+The Basics of Sushi:
+
+At its core, sushi consists of vinegared rice (shari) wrapped around a filling (neta). The filling can be raw fish, seafood, vegetables, or even cooked meats. There are several types of sushi, including:
+
+Nigiri-zushi: Hand-pressed rice topped with a slice of fish or other ingredient.
+Maki-zushi: Rolled sushi, often containing seaweed (nori), rice, and filling.
+Uramaki-zushi: Inside-out rolls, where the rice is on the outside and the nori is on the inside.
+Sashimi: Thinly sliced raw fish or seafood served without rice.
+The Art of Preparation:
+
+Preparing sushi is a delicate art that requires skill and precision. The rice must be cooked and seasoned to perfection, while the fish must be selected and prepared with care. The cutting and slicing techniques used in sushi preparation are essential for achieving the desired texture and appearance.
+
+Nutritional Value:
+
+Sushi is not only a delicious delicacy but also a nutritious meal. Fish, a primary ingredient in sushi, is a rich source of omega-3 fatty acids, which have numerous health benefits. Additionally, sushi often includes vegetables, such as seaweed and cucumber, providing essential vitamins and minerals.
+
+Cultural Significance:
+
+Sushi has deep cultural roots in Japan. It is often associated with traditional Japanese cuisine and is considered a symbol of the country's culinary heritage. The preparation and consumption of sushi are imbued with cultural significance and etiquette.</p>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Function to toggle visibility of sections in mobile view
+        function showSection(section) {
+            // Hide all sections
+            document.getElementById('chicken-section').classList.remove('active');
+            document.getElementById('beef-section').classList.remove('active');
+            document.getElementById('sushi-section').classList.remove('active');
+
+            // Show the selected section
+            document.getElementById(section + '-section').classList.add('active');
+        }
+
+        // Function to toggle the read more content
+        function toggleReadMore(button) {
+            const cardBody = button.closest('.card-body');
+            
+            // Toggle between full height and limited height
+            if (cardBody.classList.contains('limited-height')) {
+                cardBody.classList.remove('limited-height');
+                button.textContent = 'Read Less';
+            } else {
+                cardBody.classList.add('limited-height');
+                button.textContent = 'Read More';
+            }
+        }
+    </script>
+
 </body>
 </html>
