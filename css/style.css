@@ -2,7 +2,7 @@
         .title-band {
             background-color: #f0f0f0; /* Light shaded background */
             padding: 20px;
-            border-bottom: 2px solid #ddd; /* Border below the title band */
+            border-bottom: 4px solid #ddd; /* Border below the title band */
         }
 
         /* Align the title to the left inside the band */
